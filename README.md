@@ -1,0 +1,30 @@
+# main_api
+
+Kleines Python-Paket fuer SEC Company Facts, Filing-Daten und Bewertungskennzahlen.
+
+## Lokale Entwicklung
+
+```bash
+pip install -e .
+```
+
+## Verwendung aus anderen Projekten
+
+```bash
+pip install git+https://github.com/Microfinance2010/main_api.git@v0.1.0
+```
+
+Danach ist der Import wie gewohnt moeglich:
+
+```python
+import main_api
+from main_api import SEC_HEADERS, get_core_metrics_from_companyfacts
+```
+
+## Paketstruktur
+
+- `src/main_api/core.py`: eigentliche API-Logik
+- `src/main_api/__init__.py`: oeffentliche Exporte
+- `pyproject.toml`: Paket-Metadaten
+
+Wichtig: Die GitHub-Installation ueber einen Tag funktioniert erst, nachdem `v0.1.0` wirklich erstellt und gepusht wurde.
